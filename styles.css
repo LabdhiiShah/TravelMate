@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+    body{background-image: url('home.jpg');background-size: 100% auto; /* Height adjusts to the container's height */
+      background-repeat: no-repeat;
+     
+      background-image: width:100%;
+        cursor: url('https://cdn-icons-png.flaticon.com/512/847/847969.png'), auto;}
+        h1{color: white; font-family: "Cormorant Infant", serif;font-size:60px;}
+    
+    ul{list-style: none;}
+    li{display: block;
+        color: #ffffff; 
+        display: inline-block;
+        padding: 10px 90px;}
+        .container {
+          width: 100%;
+         
+          display: flex;
+          justify-content: space-between; align-items: center;
+         
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .form-container {
+      background: #f8f6f6cc; 
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 700px;
+    }
+    
+    .form-toggle {
+      display: flex;
+    gap: 120px; align-self: center;
+      margin-bottom: 20px;
+    }
+    
+    .form-toggle button {
+      padding: 10px 20px;
+      border: none;
+      background-color: black;
+     color:white;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      
+      
+    }
+    
+    .form-toggle button:hover {
+      background-color: black;
+      color: #fff;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;font-family: "Cormorant Infant", serif;
+      color:black;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-family: "Cormorant Infant", serif;
+      color: #0c0101;
+    }
+    
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      padding: 10px;
+      border: none;
+      background-color: black;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: beige; color: black;
+    }
+    
+    .form {
+      display: none;
+    }
+    
+    .form.active {
+      display: block;
+    }
+    a{color: white;}

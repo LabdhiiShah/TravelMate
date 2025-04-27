@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>TravelMate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>#hiee{color: white;font-family: "Cormorant Infant", serif;font-size: 30px;}
+        #hi{color: black;}
+        a{text-decoration: none;color: black;}
+    </style>
+</head>
+<body>
+    <section id="first" class="section">
+<center><h1>TravelMate</h1><p id="hiee">Travel.Blog.Explore.</p><br><br></center>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Signup</h2>
+        <form id="loginForm" action="#" method="POST">
+          <label for="signup-name">What should we call you?</label>
+          <input type="text" id="signup-name" name="signup-name" required>
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="signup-email" required>
+
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="signup-password" required>
+
+          <button type="submit">Signup</button><br>
+        </form>
+        <p id="hi">Already a member?</p>
+        <p id="hi"><a href="login.html"> Log in </a></p>
+      </div>
+</div>
+</section>
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("signup-name").value;
+        localStorage.setItem("username", name);
+        window.location.href = "wcm.html";
+    });
+</script>
+
+</body>

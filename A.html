@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+     <title>TravelMate</title>
+     <style>
+   @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+   h1{font-family: 'Special Gothic Expanded One', sans-serif;font-size: 50px; }
+   .float{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: floatIn 1s ease-out forwards;
+  font-size: 3rem;
+  color:#99BC85;
+}
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }}
+p{font-family: 'Special Gothic Expanded One', sans-serif;font-size: 20px;}
+button{width: 5cm;
+  height: 1.5cm;
+  background-color: black;
+  color: white;
+  font-family: 'Special Gothic Expanded One', sans-serif;    
+  font-size: 18px;
+  border: none;
+  border-radius: 5px; /* optional: rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;}
+a{text-decoration: none;color: rgb(73, 73, 129);}
+ #first{background-color: aliceblue;}
+ li{display: block;
+        color: rgb(73, 73, 129); 
+        display: inline-block;
+        padding: 10px 70px;
+        font-family: 'Special Gothic Expanded One', sans-serif;       }
+        #ccontainer {
+          width: 100%;
+         height: 80px;
+          display: flex;
+          justify-content: space-between; align-items: center;
+         
+      }
+      #hi{font-size: 70px;}
+     </style>
+     <body>
+      <section id="first" class="section">
+        <div id="ccontainer"><h1 id="hi">TravelMate</h1>
+        <ul>
+            <li><a href="wcm.html">Home</a></li>
+            <li><a href="boggg.html">Blog</a></li>         
+            <li><a href="bog1.html">Quiz</a></li>
+            <li><a href="bout12.html">About</a></li>
+    </ul>
+    </div>
+    </section>
+        <h1>Based on your choices we think you are a</h1>
+        <div id="mcontainer" > <div class="float" ><h1 id="8">WanderWild!</h1>  
+            
+            <p>A soul drawn to mountains, forests, and quiet trails.You find peace where the Wi-Fi is weak and the views are wild. Always chasing sunrises, fresh air, and the magic of untouched places.</p></div>
+        </div>
+       <center><button id="1"><a href="boggg.html">Get Blogging!</a></button><br><br>
+       <button id="2"><a href="des1.html">Preview travel packages!</a></button></center>
+     </body>
+    <script>
+     document.addEventListener("DOMContentLoaded", () => {
+        const text = document.querySelector(".float");
+        text.classList.add("float");
+      });
+    
+        </script>
+</html>

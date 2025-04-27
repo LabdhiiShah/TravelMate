@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>TravelMate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>p{color: rgb(19, 0, 0);size:20px;}
+        #hi{color: rgb(2, 0, 0); align: center;}  a{text-decoration: none;color: black; align: center;}
+        h1{color: rgb(247, 236, 236);}
+        #hii{color:rgb(243, 241, 241);
+       font-size: 30px; }
+       #hie{color: black;}
+    </style>
+</head>
+<body>
+    <section id="first" class="section">
+<center><h1>TravelMate</h1><p id="hii">Travel.Blog.Explore.</p><br><br></center>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginform" action="#" method="POST">
+            <label for="nme">Name</label>
+            <input type="text" id="nme" name="nme" required>
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" name="login-email" required>
+
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="login-password" required>
+
+          <button type="submit"  id="login">Login</button><br>
+        </form>
+        <p id="hie">Not registered?</p>
+        <p id="hie"><a href="sign.html"> Sign up now</a></p>
+      </div>
+    </div>
+</div>
+</section>
+<script>
+    document.getElementById("loginform").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("nme").value;
+        localStorage.setItem("username", name);
+        window.location.href = "wcm.html";
+    });
+</script>
+
+</body>
+</html>

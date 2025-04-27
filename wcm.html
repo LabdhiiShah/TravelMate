@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>TravelMate</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+        ul{list-style: none;}
+       a {color: rgb(73,73, 129);}
+    li{display: block;
+        color: rgb(73, 73, 129); 
+        display: inline-block;
+        padding: 10px 90px;}
+        .container {
+          width: 100%;
+         
+          display: flex;
+          justify-content: space-between; align-items: center;
+         
+      }
+      #first{background-color: aliceblue;}
+        body {
+            background-image: url('home.jpg');
+            margin: 0;
+            font-family: 'Special Gothic Expanded One', sans-serif;            
+            height: 100vh;
+        }
+
+        #welcomeText{color: aliceblue; font-size: 70px;}
+        #ino{color: aliceblue;font-size: 40px;justify-content: center;}
+        .float{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: floatIn 1s ease-out forwards;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20vh;
+}
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }}
+h2{color: #98D2C0;}
+button{width: 5cm;
+  height: 1.5cm;
+  background-color: black;
+  color: white;
+  font-family: 'Special Gothic Expanded One', sans-serif;    
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px; /* optional: rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;}
+a{text-decoration: none;color: rgb(73, 73, 129);}
+</style>
+</head>
+<body>   
+    <section id="first" class="section">
+        <div class="container"><h1>TravelMate</h1>
+        <ul>
+            <li><a href="wcm.html">Home</a></li>
+            <li><a href="boggg.html">Blog</a></li>         
+            <li><a href="bog1.html">Quiz</a></li>
+            <li><a href="bout12.html">About</a></li>
+    </ul>
+    </div>
+    </section>
+       <div class="float" >
+       <h1 id="welcomeText">Welcome!</h1></div>
+        
+        <h1 id="ino">We welcome you to TravelMate, A site where you get to know what kind of a traveller you are, share your thoughts and also get some Travel Tips!</h1>
+    <center><h2>Now, let’s take a quiz and find out what type of a traveller are you?</h2></center>
+   
+
+    <script>
+
+        const name = localStorage.getItem("username");
+        if (name) {
+            document.getElementById("welcomeText").innerText = `Welcome, ${name}!`;
+        } else {
+            document.getElementById("welcomeText").innerText = "Welcome, Traveler!";
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+    const text = document.querySelector(".float");
+    text.classList.add("float");
+  });
+
+    </script>
+
+</body>
+</html>
+
+    

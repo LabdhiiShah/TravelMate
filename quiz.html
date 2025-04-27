@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>TravelMate</title>
+    <link rel="stylesheet" href="quiz_style.css">
+    
+</head>
+<body>
+    <div class="bg_image">
+        <div class="content"> 
+            <h3>TravelMate</h3>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <img src="3.jpg" alt="">
+                    <div class="form-container">
+                    <div class="title1">
+                        <span class="spanQ">What's your favourite type of travel</span>
+                        <form>
+                            <label><input type="radio" name="q1" value="adventure" /> Adventure🏄‍♀️</label><br/>
+                            <label><input type="radio" name="q1" value="relaxation" /> Relaxation🌴</label><br />
+                            <label><input type="radio" name="q1" value="nature" /> Nature🌅</label>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                <img src="4.jpg" alt="">
+                <div class="form-container">
+                    <div class="title1">
+                        <span class="spanQ">What do you want to explore? </span>
+                        <form>
+                            <label><input type="radio" name="q2" value="domestic" />Domestic🏠 </label><br/>
+                            <label ><input type="radio" name="q2" value="international" />  International🗺️</label><br/>
+                            <label ><input type="radio" name="q2" value="both" /> Both🏠🎌</label><br/>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                <img src="https://media.istockphoto.com/id/1257836767/photo/aerial-view-of-aquarium-bay-bodrum.webp?a=1&b=1&s=612x612&w=0&k=20&c=484IflY6Hrkve4dahK26YezeKCMWt2GJFa15DlguBnw=" alt="">
+                <div class="form-container">
+                <div class="title1">
+                        <span class="spanQ">What's your ideal climate?</span>
+                        <form>
+                            <label><input type="radio" name="q3" value="Sunny" /> Sunny & Warm☀️</label><br />
+                            <label><input type="radio" name="q3" value="Cool" /> Cool & breezy 🍃</label><br />
+                            <label><input type="radio" name="q3" value="Tropical" /> Tropical & humid 🌴 </label><br />
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                <img src="https://media.istockphoto.com/id/2145675143/photo/the-great-sphinx-bythe-pyramids-of-egypt-and-its-companions-in-the-sands-of-giza-desert-egypt.webp?a=1&b=1&s=612x612&w=0&k=20&c=powebXTP2hAiP7GAA3juArTwQ1kPW7oGtEo7rLzaSuA=" alt="">
+                <div class="form-container">
+                <div class="title1">
+                        <span class="spanQ">What's a must-have on your bucket list?</span>
+                        <form>
+                            <label><input type="radio" name="q4" value="mountain" /> Climb a mountain⛰️</label><br />
+                            <label><input type="radio" name="q4" value="Pyramids" /> Visit the Pyramids🛕</label><br />
+                            <label><input type="radio" name="q4" value="Snow" /> To witness the city breathe🌃</label><br />
+                        </form>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1707344088547-3cf7cea5ca49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8dHJhdmVsfGVufDB8fDB8fHww" alt="">
+                    <div class="form-container">
+                    <div class="title1">
+                        <span class="spanQ">Which travel quote speaks to you?</span>
+                        <form>
+                            <label><input type="radio" name="q5" value="quote1" />“Life begins at the end of your comfort zone.”</label><br />
+                            <label><input type="radio" name="q5" value="quote2" /> “In every walk with nature, one receives far more than he seeks.”</label><br />
+                            <label><input type="radio" name="q5" value="quote3" /> “To travel is to live.”</label><br />
+                        </form>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="quiz9.jpg" alt="">
+                    <div class="form-container">
+                        <div class="title1">
+                        <span class="spanQ"></span>
+                        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10;">
+                            <button onclick="submitQuiz()" style="width: 5cm; height: 2cm; background-color: black; color: white; text-align: center; font-size: 4em; border: none; border-radius: 5px; cursor: pointer;">
+                                Submit→
+                            </button>
+                          </div>
+                          </div>
+                    </div>
+                </div>
+        </div>
+    <div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            initialSlide: 2,
+            speed: 600,
+            preventClicks: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 80,
+                depth: 350,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            on: {
+                click(event) {
+                    swiper.slideTo(this.clickedIndex);
+                }
+            }
+        });
+  function submitQuiz() {
+    const scores = { A: 0, B: 0, C: 0 };
+
+    // Map radio values to categories
+    const answerMap = {
+      adventure: 'A',
+      relaxation: 'B',
+      nature: 'C',
+      domestic: 'A',
+      international: 'B',
+      both: 'C',
+      Sunny: 'A',
+      Cool: 'B',
+      Tropical: 'C',
+      mountain: 'A',
+      Pyramids: 'B',
+      Snow: 'C',
+      quote1: 'A',
+      quote2: 'B',
+      quote3: 'C'
+    };
+
+    // Go through all radio inputs and count selected ones
+    document.querySelectorAll('input[type="radio"]:checked').forEach((input) => {
+      const selectedValue = input.value;
+      const category = answerMap[selectedValue];
+      if (category) scores[category]++;
+    });
+    let allAnswered = true;
+
+// Go through each question and check if it's answered
+document.querySelectorAll('.swiper-slide form').forEach(form => {
+  if (!form.querySelector('input[type="radio"]:checked')) {
+    allAnswered = false;
+  }
+});
+
+if (!allAnswered) {
+  alert("Please answer all questions before submitting.");
+  return;
+}
+    // Determine max
+    let maxCategory = 'A';
+    if (scores.B > scores.A && scores.B >= scores.C) maxCategory = 'B';
+    else if (scores.C > scores.A && scores.C >= scores.B) maxCategory = 'C';
+
+    // Redirect
+    window.location.href = `${maxCategory}.html`;
+  }
+    </script>
+</body>
+</html>

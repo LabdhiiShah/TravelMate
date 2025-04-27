@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | TravelMate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Special Gothic Expanded One', sans-serif;
+            background-color: #F6F8D5;
+            color: #205781;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #F6F8D5;
+            padding: 20px;
+            color: #205781;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #4F959D;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #F6F8D5;
+            font-size: 1.2rem;
+        }
+
+        .about-section,
+        .contact-section,
+        .love-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #98D2C0;
+        }
+
+        .about-section h1,
+        .contact-section h2,
+        .love-section h2 {
+            font-size: 2.8rem;
+            color: #205781;
+            margin-bottom: 20px;
+        }
+
+        .about-section p,
+        .contact-section p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #205781;
+        }
+
+        .contact-section ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .contact-section li {
+            margin-bottom: 10px;
+        }
+
+        .love-section textarea {
+            width: 60%;
+            height: 100px;
+            border: 2px solid #205781;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1rem;
+            font-family: 'Special Gothic Expanded One', sans-serif;
+            resize: vertical;
+        }
+
+        .love-section button {
+            margin-top: 15px;
+            background-color: #205781;
+            color: #F6F8D5;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .love-section button:hover {
+            background-color: #4F959D;
+        }
+
+        footer {
+            background-color: #205781;
+            color: #F6F8D5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .about-section h1,
+            .contact-section h2,
+            .love-section h2 {
+                font-size: 2rem;
+            }
+
+            .about-section p,
+            .contact-section p,
+            .contact-section li {
+                font-size: 1.1rem;
+            }
+
+            .love-section textarea {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TravelMate</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="wcm.html">Home</a></li>
+            <li><a href="boggg.html">Blog</a></li>
+            <li><a href="bout12.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <h1>About Us</h1>
+        <p>
+            TravelMate was built with one goal in mind: to connect curious souls to the adventures they deserve. 
+            Whether you're an adrenaline junkie, a peaceful wanderer, or someone who finds magic in nature’s silence—our travel quiz helps you discover the perfect getaway. 
+            We’re passionate about making your travel journey personal, meaningful, and unforgettable.
+        </p>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <ul>
+            <li>📞 Phone: 9833458790</li>
+            <li>📧 Email: travelmate@gmail.com</li>
+            <li>📸 Instagram: <a href="https://www.instagram.com/travell.mate123?igsh=MWUxcWw0dXN5cGRndA==" target="_blank">@travell.mateq123</a></li>
+        </ul>
+        <h2>Created by</h2>
+        <ul><li>Bhoomi Desai & Labdhi Shah</li> </ul>
+    </section>
+    <section class="love-section">
+        <h2>Show Us Some Love</h2>
+        <form onsubmit="handleLove(event)">
+            <textarea placeholder="Write your thoughts here..."></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 TravelMate. All rights reserved.
+    </footer>
+
+    <script>
+        function handleLove(event) {
+            event.preventDefault();
+            alert("Submitted! 💌 Thanks for your love.");
+        }
+    </script>
+
+</body>
+</html>
